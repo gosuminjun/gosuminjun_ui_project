@@ -15,7 +15,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["@emotion/react/types/css-prop"]
+    "types": ["@emotion/react/types/css-prop"],
+    "baseUrl": "src", // 절대 경로의 기준이 될 디렉토리
+    "paths": {
+      "@/*": ["*"] // @/로 시작하는 경로를 src/로 매핑
+    }
   },
   "include": ["src"]
 }
